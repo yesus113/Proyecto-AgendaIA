@@ -1,1 +1,20 @@
+# Ignorar archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
 venv/
+myworld/
+.env/
+
+# Archivos de configuración locales
+*.sqlite3
+*.log
+*.pot
+*.pyc
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
