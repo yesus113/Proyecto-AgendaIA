@@ -29,6 +29,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+COMPRESS_ENABLED = True
+COMPRESS_ROOT = BASE_DIR / 'static'
+STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
 
 # Application definition
 
@@ -40,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #Login
-    "login.apps.LoginConfig"
+    'login.apps.LoginConfig',
+    'compressor'
 ]
 
 MIDDLEWARE = [
