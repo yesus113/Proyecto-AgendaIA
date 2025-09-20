@@ -18,3 +18,4 @@ myworld/
 .vscode/
 .idea/
 *.swp
+node_modules/@tailwindcss/oxide-win32-x64-msvc/tailwindcss-oxide.win32-x64-msvc.node
