@@ -1,7 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from django.contrib.auth.views import LoginView, LogoutView
 from django.views.generic import FormView, RedirectView
+from django.contrib.auth import login, logout
+from django.shortcuts import redirect
+from django.views.generic import FormView, RedirectView
+from agenda import settings
 
 # Create your views here.
 def hello(request):
