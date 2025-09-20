@@ -12,7 +12,8 @@ def hello(request):
     return HttpResponse("Hola mundo")
 
 class LoginFormView(LoginView):
-    template_name = 'login.html'
+    template_name = 'login/login.html'
+
 
     def dispatch(self, request, *args, **kwargs):
         if request.user.is_authenticated:
